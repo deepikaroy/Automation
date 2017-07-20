@@ -1,0 +1,16 @@
+<suite name="Suite">
+  <test name="Test">
+    <parameter name ="node" value ="http://localhost:4444/wd/hub"/>
+    <parameter name ="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="valid"/>
+         <include name="functional"/>
+          <include name="smoke"/>
+      </run>	
+    </groups>
+    <packages>
+  	  <package name ="com.nexus.tests"/>
+    </packages>
+  </test>
+</suite>

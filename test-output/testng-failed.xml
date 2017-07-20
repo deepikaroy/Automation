@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <parameter name="node" value="http://localhost:4444/wd/hub"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="valid"/>
+        <include name="functional"/>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.nexus.tests.VerifyVersion">
+        <methods>
+          <include name="closeApp"/>
+          <include name="testVerifyVerison"/>
+          <include name="openApp"/>
+          <include name="setDriverPath"/>
+        </methods>
+      </class> <!-- com.nexus.tests.VerifyVersion -->
+      <class name="com.nexus.tests.ValidLoginLogout">
+        <methods>
+          <include name="closeApp"/>
+          <include name="testValidLoginLogout"/>
+          <include name="openApp"/>
+          <include name="setDriverPath"/>
+        </methods>
+      </class> <!-- com.nexus.tests.ValidLoginLogout -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
